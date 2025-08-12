@@ -1,0 +1,76 @@
+@keyframes selected_card_anim {
+  from {
+    transform: rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card:hover {
+    transform: translateY(-5%);
+}
+
+.card_selected {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-5%);
+    animation: selected_card_anim 2s linear alternate infinite;
+}
+
+.stacks_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 2% 0
+}
+
+.throw_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.stack {
+    position: relative;
+    height: 100%;
+    aspect-ratio: 2/3;
+    margin: 0% 50% 5% 5%;
+}
+
+.desk {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 3fr;
+    background-color: rgb(175, 202, 11);
+    border-style: solid;
+    border-color: rgb(0, 102, 51);
+    border-radius: 2%;
+    aspect-ratio: 1/1;
+    resize: vertical;
+    overflow: hidden;
+    max-height: 90vh;
+}
+
+.throw {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
