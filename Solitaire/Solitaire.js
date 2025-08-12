@@ -230,9 +230,9 @@ function Desk(){
 
     function OnStart(){
         alert(`Rules:\n
-            - The Goal: Clear out all slots by stacking all cards by suits (A, 6, 7, ..., K)\n
-            - Replacing cards between slots rules:\n
-            -- No more then 3 cards per slot\n
+            - The Goal: Clear out all stacks by stacking all cards by suits (A, 6, 7, ..., K)\n
+            - Replacing cards between stacks rules:\n
+            -- No more then 3 cards per stack\n
             -- You can place a card only on a card with the same value`)
     }
 
@@ -241,4 +241,5 @@ function Desk(){
     }
     let desk_element = Toss()
     OnStart()
+
 }
