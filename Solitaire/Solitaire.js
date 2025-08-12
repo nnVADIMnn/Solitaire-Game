@@ -230,7 +230,7 @@ function Desk(){
 
     function OnStart(){
         alert(`Rules:\n
-            - The Goal: Clear out all stacks by stacking all cards by suits (A, 6, 7, ..., K)\n
+            - The Goal: Clear out all stacks by arranging all cards by suits (A, 6, 7, ..., K)\n
             - Replacing cards between stacks rules:\n
             -- No more then 3 cards per stack\n
             -- You can place a card only on a card with the same value`)
@@ -243,3 +243,4 @@ function Desk(){
     OnStart()
 
 }
+
